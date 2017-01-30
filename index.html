@@ -1,0 +1,91 @@
+<!doctype html>
+<!--Dont forget to run gulp after you set up basic html structure, this
+saves it to the public directory.  Actually you can run gulp watch to keep
+gulp files updated-->
+
+<html>
+
+<head>
+    <title>Starter pack</title>
+    <!--Add css file-->
+    <link rel="stylesheet" href="style.css">
+    <!--add js file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Lemonade Stand Game</h1>
+        <div id="title">
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+            <img src="http://i66.tinypic.com/232rtx.png"></img>
+        </div>
+    </header>
+    <section id="gameUpdates">
+        <ul id="updatesList">
+            <li class="listItem">
+                <h2>Day</h2>
+                <p>1</p>
+            </li>
+            <li class="listItem">
+                <h2>Money</h2>
+                <p>$20</p>
+            </li>
+            <li class="listItem">
+                <h2>Visitors</h2>
+                <p>0</p>
+            </li>
+            <li class="listItem">
+                <h2>Customers</h2>
+                <p>0</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="stockList">
+        <ul id="stockItems">
+            <div id="row1">
+            <li class="stock">
+                <h2>Lemons<h2>
+                <p> X number in stock</p>
+                <input value="text" placeholder="$2/each">
+                <button>Buy</button>
+            </li>
+            <li class="stock">
+                <h2>Sugar<h2>
+                <p> X number in stock</p>
+                <input value="text" placeholder="$1.25/bag">
+                <button>Buy</button>
+            </li>
+            </div>
+
+            <div id="row2">
+            <li class="stock">
+                <h2>Ice<h2>
+                <p> X number in stock</p>
+                <input value="text" placeholder="$0.50/chunk">
+                <button>Buy</button>
+            </li>
+            <li class="stock">
+                <h2>Cups<h2>
+                <p> X number in stock</p>
+                <input value="text" placeholder="$0.10/each">
+                <button>Buy</button>
+            </li>
+            </div>
+        </ul>
+
+    </section>
+
+
+    </section>
+
+</body>
+
+</html>

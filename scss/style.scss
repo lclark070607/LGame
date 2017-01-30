@@ -1,0 +1,81 @@
+/* Include Foundation*/
+@import '../node_modules/foundation-sites/scss/foundation'; //because its in a scss folder
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms";
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+
+
+body {
+    background-color: yellow;
+}
+
+header {
+    @include grid-row();
+
+}
+h1 {
+    @include grid-column(12);
+    text-align: center;
+    color: blue;
+}
+
+#title {
+    @include grid-row();
+   
+}
+
+
+img {
+    @include grid-column(2);
+    width: 15%;
+}
+
+#updatesList {
+    @include grid-row();
+    display: flex;
+    justify-content: space-around;
+}
+
+.listItem {
+    @include grid-column(3);
+    list-style-type: none;
+    text-decoration-style: none;
+    text-align: center;
+    border: 2px solid blue;
+    background-color: white;
+    color: blue;
+    margin: 20px;
+
+}
+
+#stockItems {
+    @include grid-row();
+
+}
+
+#row1 {
+    @include grid-column(12);
+    display: flex;
+    justify-content: center;
+    
+}
+
+#row2 {
+    @include grid-column(12);
+    display: flex;
+    justify-content: center;
+   
+}
+.stock {
+        list-style-type: none;
+        text-decoration: none;
+        background-color: white;
+        border: 4px dashed blue;
+        padding: 40px;
+        margin: 50px;
+        
+    }
+
