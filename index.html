@@ -6,7 +6,7 @@ gulp files updated-->
 <html>
 
 <head>
-    <title>Starter pack</title>
+    <title>Lemonade Stand</title>
     <!--Add css file-->
     <link rel="stylesheet" href="style.css">
     <!--add js file-->
@@ -15,7 +15,7 @@ gulp files updated-->
 
 </head>
 
-<body>
+<body ng-app="LemonadeApp">
     <header>
         <h1>Lemonade Stand Game</h1>
         <div id="title">
@@ -27,7 +27,7 @@ gulp files updated-->
             <img src="http://i66.tinypic.com/232rtx.png"></img>
         </div>
     </header>
-    <section id="gameUpdates">
+    <section ng-controller="StatusListController">
         <ul id="updatesList">
             <li class="listItem">
                 <h2>Day</h2>
@@ -48,7 +48,7 @@ gulp files updated-->
         </ul>
     </section>
 
-    <section id="stockList">
+    <section ng-controller="StockListController">
         <ul id="stockItems">
             <div id="row1">
             <li class="stock">
