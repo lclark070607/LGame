@@ -27,64 +27,31 @@ gulp files updated-->
             <img src="http://i66.tinypic.com/232rtx.png"></img>
         </div>
     </header>
+
     <section ng-controller="StatusListController">
         <ul id="updatesList">
-            <li class="listItem">
-                <h2>Day</h2>
-                <p>1</p>
-            </li>
-            <li class="listItem">
-                <h2>Money</h2>
-                <p>$20</p>
-            </li>
-            <li class="listItem">
-                <h2>Visitors</h2>
-                <p>0</p>
-            </li>
-            <li class="listItem">
-                <h2>Customers</h2>
-                <p>0</p>
-            </li>
+            <status-list></status-list>
         </ul>
+
     </section>
 
     <section ng-controller="StockListController">
-        <ul id="stockItems">
-            <div id="row1">
-            <li class="stock">
-                <h2>Lemons<h2>
-                <p> X number in stock</p>
-                <input value="text" placeholder="$2/each">
-                <button>Buy</button>
-            </li>
-            <li class="stock">
-                <h2>Sugar<h2>
-                <p> X number in stock</p>
-                <input value="text" placeholder="$1.25/bag">
-                <button>Buy</button>
-            </li>
-            </div>
+        <ul>
 
-            <div id="row2">
-            <li class="stock">
-                <h2>Ice<h2>
-                <p> X number in stock</p>
-                <input value="text" placeholder="$0.50/chunk">
-                <button>Buy</button>
+            <li ng-repeat="item in items">
+                <h2>{{ item.name }<h2>
+                <p>There are{{ item.count }}available.</p>
+                <!--<quantity-select></quantity-select>-->
+                <!--<input value="text" name="input" ng-model="item.price" placeholder="$2/each">-->
+                <buy-button tapped-on="buy(item)" bought="item">Buy</buy-button>
             </li>
-            <li class="stock">
-                <h2>Cups<h2>
-                <p> X number in stock</p>
-                <input value="text" placeholder="$0.10/each">
-                <button>Buy</button>
-            </li>
-            </div>
+
         </ul>
 
     </section>
 
-
-    </section>
+    <button id="endGame">End Game</button>
+   
 
 </body>
 
